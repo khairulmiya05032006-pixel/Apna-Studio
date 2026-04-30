@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color : #70544b;
+    --outer-box :#70664B;
+    --padding :#704B55;
+
+}
+body {
+    background-color: #4B6870;
+}
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: #cb4112ae;
+    font-style: italic;
+    line-height: 33.6px;
+    font-family: Papyrus, fantasy;
+    font-size: 40px;
+    font-style: italic;
+    line-height: 28px;
+    padding-top: 10px;
+    text-shadow: 4px 4px 10px #582525;
+    padding-bottom: 10px;
+}
+h3 {
+     text-align: center;
+    font-weight: 500;
+    color: #9b1234;
+    text-shadow: 2px 2px 7px black;
+    font-style: italic;
+    line-height: 33.6px;
+    font-family: Papyrus, fantasy;
+    font-size: 25px;
+    font-style: italic;
+    line-height: 28px;
+    padding-top: 10px;
+    animation: fontanimation 2s ease-in 0.5s infinite normal ;
+    z-index: 2;
+} 
+.line {
+    height: 15px;
+    width: 100px;
+    border: 2px solid #821f38;
+    border-radius: 10px;
+    background-color: #821f38;
+    margin: auto;
+    animation: divanimation 4s linear 0.5s infinite alternate ;
+    z-index: 3;
+    
+
+}
+/* @keyframes fontanimation {
+    0% {color: #821f38;}
+    20%{color: red;}
+    40% {color: rgb(128, 0, 9)}
+    60% {color: blue;}
+    80% {color: rgb(235, 229, 229);}
+    100%{color: #821f38;}
+
+} */
+@keyframes divanimation {
+    0% {background-color: #821f38;}
+    20%{background-color: #CF3048;}
+    40% {background-color:#664B70}
+    60% {background-color: #70534B;}
+    80% {background-color: #56704B;}
+    100%{background-color: #821f38;}
+    0% {margin-left: 20%; ;}
+    100% {margin-left: 60%;}
+   
+
+}
+.main {
+    height: 200%;
+    margin: auto;
+    padding: 20px 0px;
+    background-color: #4B6870;
+}
+.gallary {
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+    max-height: auto;
+    border: 5px solid var(--main-color);
+    background-color: none;
+    display: flex;
+    margin: auto;
+    justify-items: s;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    padding: 10px 10px;
+    box-shadow: 3px 3px 13px #70544B;
+
+}
+.gallary img{
+    width: 300px;
+    height: 380px;
+    border: 5px solid black;
+    box-shadow: 5px 5px 8px rgb(80, 73, 73);
+    background-size: cover;
+    box-shadow: 5px 5px 10px var(--main-color);
+    transition: 1s ease-in-out 0.1s;
+}
+img:hover {
+    box-shadow: 5px 5px 10px #56704B;
+     width: 350px;
+    height: 420px;
+    
+    
+}
